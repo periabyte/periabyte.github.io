@@ -1,20 +1,116 @@
-<html>
-	<head>
-		<title>
-			Periabyte! 
-		</title>
-		
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<div>
-			<h1>
-				PeriaByte!
-			</h1>	
-			<p>Hi I'm Paul Peria and this site is still under construction.</p>
-			<p>You can reach me here.</p>
-			<p><a href="mailto:periabytes@gmail.com">periabytes@gmail.com</a></p>
-		</div>
-		
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I love Kareen!</title>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/alex/stylesheet.css"/>
+    <link rel="stylesheet" href="assets/css/courier/stylesheet.css"/>
+    <link rel="stylesheet" href="assets/css/bulma/bulma.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.scrollify.min.js"></script>
+</head>
+<body>
+
+<a id="scroller" href="#">
+    <h3><i class="fa fa-chevron-circle-down"></i></h3>
+</a>
+
+<section class="hero is-fullheight happy">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Happy <strong class="pink">Anniversary!</strong></h1>
+            <h2 class="subtitle">December 8, 2016</h2>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-fullheight yes" id="yes">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <div class="title">
+                        <img src="./assets/img/yes.jpg" alt="yes" />
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="title">
+                        It seems like it was only yesterday since you gave me your <strong class="pink">&ldquo;Yes&rdquo;</strong>.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-fullheight celebrating">
+    <div class="hero-body lighter">
+        <div class="container">
+            <h2 class="title">
+                And now, here we are celebrating our <strong class="pink">first</strong> anniversary.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-fullheight very-happy">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title">
+                I want you to know that I'm <strong class="pink">very happy</strong> being with you.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title">
+                And I look forward to <strong class="pink">make new memories</strong> with you.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-fullheight last">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title">
+                        I love you so much,<br /><strong class="pink">Mi Amor</strong>!
+                    </h1>
+                </div>
+                <div class="column is-one-third">
+                    <img src="./assets/img/love.jpg" alt="I love you Mi Amor">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    $(function () {
+        $.scrollify({
+            section: 'section.hero',
+            after: function() {
+                if($($.scrollify.current()[0]).hasClass('last')) {
+                    $('#scroller').fadeOut();
+                } else {
+                    $('#scroller').fadeIn();
+                }
+            }
+        });
+
+        $('#scroller').on('click', function () {
+            $.scrollify.next();
+        });
+    });
+</script>
+</body>
 </html>
