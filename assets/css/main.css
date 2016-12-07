@@ -81,3 +81,7 @@ h1.title {
 #scroller h3 {
 	font-size: 40px;
 }
+
+.yes .h2.title {
+	margin-left: 20px;
+}
