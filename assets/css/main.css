@@ -33,12 +33,17 @@ h1 {
 	background-size: cover;
 }
 
+.hero.last {
+	background: url("../img/last.jpg") no-repeat center center;
+	background-size: cover;
+}
+
 .hero-body {
 	background: rgba(255, 255, 255, 0.8);
 }
 
 .hero .hero-body.lighter {
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.40);
 }
 
 .pink {
