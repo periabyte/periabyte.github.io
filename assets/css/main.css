@@ -50,6 +50,10 @@ h1 {
 	color: #e91e63 !important;
 }
 
+.thank .pink {
+	margin: 0 8px;
+}
+
 .title {
 	font-family: 'alex_brushregular';
 	font-size: 80px;
