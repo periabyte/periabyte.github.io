@@ -1,23 +1,6 @@
 @import "./variables";
 @import "node_modules/spectre.css/src/spectre";
 @import "node_modules/spectre.css/src/_off-canvas";
-// .off-canvas {
-//     &.off-canvas-sidebar {
-//         background: #f7f8f9;
-//         bottom: 0;
-//         left: 0;
-//         min-width: 10rem;
-//         overflow-y: auto;
-//         position: fixed;
-//         top: 0;
-//         transform: translateX(-100%);
-//         transition: transform 0.25s;
-//         z-index: 200;
-//         &.active {
-//             transform: translateX(0);
-//         }
-//     }
-// }
 
 .container {
     min-height: 100vh;
@@ -45,4 +28,45 @@
 
 .logoContainer {
     padding: 5px;
+}
+
+.nav {
+    .nav-item {
+        margin-bottom: 0px;
+        color: #66758c;
+        padding: 0.2rem 0.4rem;
+        text-decoration: none;
+
+        &.active {
+            color: #505c6e;
+            font-weight: 700;
+        }
+    }
+}
+
+.brand {
+    display: block;
+    margin: 15px 0;
+}
+
+a {
+    &:active,
+    &:hover,
+    &:focus,
+    &.active {
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+
+.hero {
+    &.hero-full {
+        height: 100vh;
+    }
+}
+
+.off-canvas {
+    .off-canvas-content {
+        padding: 0;
+    }
 }

@@ -32,7 +32,6 @@ class Layout extends PureComponent {
     render() {
         const { sidebarOpen } = this.state;
         const { children } = this.props;
-        console.log("this.props", this.props);
 
         return (
             <StaticQuery
@@ -49,7 +48,7 @@ class Layout extends PureComponent {
                     return (
                         <div className="container off-canvas off-canvas-sidebar-show">
                             <button
-                                className="off-canvas-toggle btn btn-primary btn-action"
+                                className="off-canvas-toggle btn btn-link btn-action"
                                 onClick={this._toggleSidebar}
                             >
                                 <i className="icon icon-menu" />
