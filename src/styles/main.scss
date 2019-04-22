@@ -63,6 +63,18 @@ a {
     &.hero-full {
         height: 100vh;
     }
+
+    .hero-body {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            margin-top: 1rem;
+        }
+    }
 }
 
 .off-canvas {
