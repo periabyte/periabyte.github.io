@@ -98,10 +98,12 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-basis: 30%;
     justify-content: space-around;
 
     & > a {
+        flex-basis: 33%;
+        text-align: center;
+        margin: 0.2em 0;
         color: $gray-color;
 
         @each $name, $color in $social-media {
