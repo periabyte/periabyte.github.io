@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import "spectre.css/dist/spectre-icons.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../styles/main.scss";
 
 import Header from "./header";

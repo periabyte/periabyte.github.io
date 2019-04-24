@@ -19,16 +19,46 @@ const Sidebar = ({ active, title }) => (
             <Link to="/" className="nav-item" activeClassName="active">
                 Home
             </Link>
+            <Link to="/" className="nav-item" activeClassName="active">
+                Tech Stack
+            </Link>
+            <Link to="/" className="nav-item" activeClassName="active">
+                Work Experience
+            </Link>
+            <Link to="/" className="nav-item" activeClassName="active">
+                Contact Me
+            </Link>
             <Link to="/blog" className="nav-item" activeClassName="active">
                 Blog
             </Link>
-            <Link
-                to="/work-history"
-                className="nav-item"
-                activeClassName="active"
-            >
-                Work History
-            </Link>
+        </div>
+        <div className="divider text-center" data-content="Downloads" />
+        <button className="resume btn btn-primary btn-block">
+            <i className="fas fa-file-download" />
+            Resume
+        </button>
+        <div className="divider text-center" data-content="social media" />
+        <div className="social-media">
+            <a href="https://m.me/periabytes" target="_blank">
+                <i className="fab fa-facebook-messenger fa-2x" />
+            </a>
+            <a href="https://facebook.com/periabytes" target="_blank">
+                <i className="fab fa-facebook-square fa-2x" />
+            </a>
+            <a href="https://twitter.com/PeriaByte" target="_blank">
+                <i className="fab fa-twitter fa-2x" />
+            </a>
+
+            <a href="https://github.com/periabyte" target="_blank">
+                <i className="fab fa-github-alt fa-2x" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/periabyte" target="_blank">
+                <i className="fab fa-linkedin fa-2x" />
+            </a>
+            <a href="https://www.twitch.tv/periabyte" target="_blank">
+                <i className="fab fa-twitch fa-2x" />
+            </a>
         </div>
     </div>
 );

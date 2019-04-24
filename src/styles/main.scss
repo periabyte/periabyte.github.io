@@ -33,12 +33,12 @@
 .nav {
     .nav-item {
         margin-bottom: 0px;
-        color: #66758c;
+        color: $Blue-Grunge-Background-5-hex;
         padding: 0.2rem 0.4rem;
         text-decoration: none;
 
         &.active {
-            color: #505c6e;
+            color: $Blue-Grunge-Background-3-hex;
             font-weight: 700;
         }
     }
@@ -74,11 +74,66 @@ a {
         h1 {
             margin-top: 1rem;
         }
+
+        .description {
+            font-size: 1.25rem;
+            font-weight: 200;
+            max-width: 50%;
+            text-align: center;
+        }
     }
 }
 
 .off-canvas {
     .off-canvas-content {
         padding: 0;
+    }
+
+    .off-canvas-sidebar {
+        max-width: 10%;
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 30%;
+    justify-content: space-around;
+
+    & > a {
+        color: $gray-color;
+
+        @each $name, $color in $social-media {
+            .fa-#{$name} {
+                &:hover {
+                    color: lighten($color, 20%);
+                }
+
+                &:active {
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+
+.divider {
+    border-top-color: $Blue-Grunge-Background-5-hex;
+}
+.divider[data-content]::after,
+.divider-vert[data-content]::after {
+    background: $bg-color;
+    color: $Blue-Grunge-Background-2-hex;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.resume {
+    text-transform: uppercase;
+    font-weight: 600;
+    .fas,
+    .fab {
+        margin-right: 5px;
     }
 }

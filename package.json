@@ -26,6 +26,7 @@
         "typography-theme-moraga": "^0.16.19"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.8.1",
         "gh-pages": "^2.0.1",
         "prettier": "^1.17.0"
     },
