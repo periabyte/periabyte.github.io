@@ -16,33 +16,33 @@ const Sidebar = ({ active, title }) => (
             </div>
         </Link>
         <div className="nav">
-            <Link to="/" className="nav-item" activeClassName="active">
+            <Link to="/" className="nav-item" activeClassName="active" >
                 Home
             </Link>
-            <Link to="/" className="nav-item" activeClassName="active">
+            <Link to="/tech-stack" className="nav-item" activeClassName="active">
                 Tech Stack
             </Link>
-            <Link to="/" className="nav-item" activeClassName="active">
-                Work Experience
+            <Link to="/experience" className="nav-item" activeClassName="active">
+                Experience
             </Link>
-            <Link to="/" className="nav-item" activeClassName="active">
-                Contact Me
+            <Link to="/contact" className="nav-item" activeClassName="active">
+                Reach Out
             </Link>
             <Link to="/blog" className="nav-item" activeClassName="active">
                 Blog
             </Link>
         </div>
-        <div className="divider text-center" data-content="Downloads" />
-        <button className="resume btn btn-primary btn-block">
+        <div className="divider text-center" data-content="Download" />
+        <a className="resume btn btn-primary btn-block" href={'resume.pdf'} download="resume.pdf">
             <i className="fas fa-file-download" />
             Resume
-        </button>
+        </a>
         <div className="divider text-center" data-content="social media" />
         <div className="social-media">
             <a href="https://m.me/periabytes" target="_blank">
                 <i className="fab fa-facebook-messenger fa-2x" />
             </a>
-            <a href="https://facebook.com/periabytes" target="_blank">
+            <a href="https://facebook.com/periabytes" target="_blank">  
                 <i className="fab fa-facebook-square fa-2x" />
             </a>
             <a href="https://twitter.com/PeriaByte" target="_blank">
