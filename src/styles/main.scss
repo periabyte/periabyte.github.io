@@ -190,3 +190,146 @@ a {
         padding: 15px 0;
     }
 }
+
+.tile-title {
+    margin-right: 10px;
+}
+
+.latest-blog {
+    margin: 0 10px;
+
+    .link-container {
+        margin-bottom: 10px;
+    }
+
+    .link-title {
+        color: $Blue-Grunge-Background-2-hex;
+        border-bottom-color: $Blue-Grunge-Background-2-hex;
+        border-bottom-width: 0.5px;
+        border-bottom-style: solid;
+    }
+
+    .link-date {
+        color: $Blue-Grunge-Background-4-hex;
+        font-size: 10px;
+        display: block;
+    }
+}
+
+.blog-hero {
+    color: #ffffff;
+
+    &::before{
+        display: block;
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: $Blue-Grunge-Background-1-hex;
+        opacity: 0.20;
+    }
+
+    .hero-body {
+        z-index: 2;
+        text-shadow: black 2px 2px 5px;
+    }
+}
+
+.blog-post-content {
+    display: flex;
+    flex: 1;
+    padding: 30px 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-indent: 30px;
+    }
+
+    ul {
+        list-style-position: outside;
+    }
+}
+
+.blog-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-post-tags-container {
+    flex: 0.4;
+    padding: 20px 15px;
+}
+
+.blog-post-date {
+    align-self: flex-start;
+}
+
+.page-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 65%;
+}
+
+.blog-entry-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blog-entry-feature-img {
+    width: 150px;
+    height: 150px;
+}
+
+.blog-entry-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px 20px;
+
+    h3 {
+        color: $Blue-Grunge-Background-3-hex;
+    }
+
+    p {
+        text-align: justify;
+        color: $Blue-Grunge-Background-1-hex;
+    }
+
+    small {
+        color: $darkGray;
+    }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .page-main-container {
+        max-width: 100%;
+    }
+
+    .blog-entry-container {
+        flex-direction: column;
+    }
+
+    .blog-entry-feature-img {
+        width: 100%;
+    }
+
+    .blog-entry-details {
+        padding: 10px 0;
+    }
+
+    .blog-main-container {
+        flex-direction: column;
+    }
+}

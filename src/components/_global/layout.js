@@ -33,6 +33,7 @@ class Layout extends PureComponent {
     render() {
         const { sidebarOpen } = this.state;
         const { children } = this.props;
+        console.log('this.props', this.props);
 
         return (
             <StaticQuery
@@ -43,9 +44,25 @@ class Layout extends PureComponent {
                                 title
                             }
                         }
+                        allMarkdownRemark(
+                            sort: { fields: [frontmatter___date], order: DESC }
+                            limit: 5
+                        ) {
+                            edges {
+                                node {
+                                    frontmatter {
+                                        date(fromNow: true)
+                                        title
+                                        path
+                                    }
+                                }
+                            }
+                        }
                     }
                 `}
                 render={data => {
+                    const { site, allMarkdownRemark } = data;
+                    const { edges: posts } = allMarkdownRemark;
                     return (
                         <div className="container off-canvas off-canvas-sidebar-show">
                             <button
@@ -55,7 +72,8 @@ class Layout extends PureComponent {
                                 <i className="icon icon-menu" />
                             </button>
                             <Sidebar
-                                title={data.site.siteMetadata.title}
+                                title={site.siteMetadata.title}
+                                posts={posts}
                                 active={sidebarOpen}
                             />
                             <i

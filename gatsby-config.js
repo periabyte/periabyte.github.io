@@ -7,10 +7,26 @@ module.exports = {
     plugins: [
         `gatsby-plugin-react-helmet`,
         {
+            resolve: `gatsby-plugin-gtag`,
+            options: {
+                // your google analytics tracking id
+                trackingId: `UA-150379376-1`,
+                // Puts tracking script in the head instead of the body
+                head: false
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
                 path: `${__dirname}/src/images`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/pages/blog`,
             },
         },
         {
@@ -20,6 +36,9 @@ module.exports = {
             },
         },
         `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`,
+        },
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
