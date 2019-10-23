@@ -39,8 +39,8 @@ Hello, I’m Paul. Here I am writing my first ever blog. Actually, I'm just a ne
 - Have a platform to Share my knowledge to the readers
 - Grow my professional network & gain exposure
 - Improve my writing skills
-- Take sometime off of a busy work week
+- Take some time off from a busy week
 
-##### I’ll always look forward to share something with you guys.
+##### I’ll always look forward to share something with you guys
 
 ##### *May God Bless you all!*

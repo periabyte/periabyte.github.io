@@ -11,7 +11,7 @@ const IndexPage = () => (
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <div className="hero hero-full bg-dark">
             <div className="hero-body">
-                <img src={profile} className="s-circle" width={200} />
+                <img src={profile} className="s-circle profile-img" />
                 <h1>Hi! I'm Paul!</h1>
                 <p className="description">
                     A <strong>software developer</strong> who currently
