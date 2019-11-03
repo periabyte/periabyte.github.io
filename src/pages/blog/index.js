@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import moment from 'moment';
 import Layout from "../../components/_global/layout";
 import SEO from "../../components/_global/seo";
 
@@ -27,7 +28,7 @@ const BlogPage = ({data}) => {
                                     <div className="blog-entry-details">
                                         <h3>{frontmatter.title}</h3>
                                         <p>{excerpt}</p>
-                                        <small>{frontmatter.date}</small>
+                                        <small>{moment(frontmatter.date).fromNow()}</small>
                                     </div>
                                 </div>
                             </Link>
@@ -51,7 +52,7 @@ export const query = graphql`
                            id
                            excerpt
                            frontmatter {
-                               date(fromNow: true)
+                               date
                                title
                                path
                                featuredImage {
