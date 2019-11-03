@@ -2,13 +2,22 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/_global/layout';
 import BackgroundImage from 'gatsby-background-image';
+import SEO from '../components/_global/seo';
 
-export default ({ data }) => {
+export default ({ data, location }) => {
     const { markdownRemark } = data;
-    const { frontmatter, html } = markdownRemark;
-    const { fluid } = frontmatter.featuredImage.childImageSharp;
+    const { frontmatter, description, html } = markdownRemark;
+    const { fluid, resize } = frontmatter.featuredImage.childImageSharp;
+    console.log('resize', resize);
     return (
         <Layout>
+            <SEO
+                title={frontmatter.title}
+                description={description}
+                keywords={frontmatter.tags}
+                thumbnail={resize.src}
+                path={location.pathname}
+            />
             <div className="blog-post-container">
                 <div className="blog-post">
                     <BackgroundImage fluid={fluid}>
@@ -40,22 +49,26 @@ export default ({ data }) => {
 }
 
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
-            html
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                path
-                title
-                tags
-                featuredImage {
-                    childImageSharp {
-                        fluid(maxWidth: 800) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
+           query($path: String!) {
+               markdownRemark(frontmatter: { path: { eq: $path } }) {
+                   html
+                   description: excerpt(pruneLength: 200)
+                   frontmatter {
+                       date(formatString: "MMMM DD, YYYY")
+                       path
+                       title
+                       tags
+                       featuredImage {
+                           childImageSharp {
+                               resize(width: 1000, height: 1000) {
+                                   src
+                               }
+                               fluid(maxWidth: 800) {
+                                   ...GatsbyImageSharpFluid
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       `;
