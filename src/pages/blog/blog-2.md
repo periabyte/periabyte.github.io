@@ -6,11 +6,11 @@ tags: ["Personal", "Self Growth", "Hobbies", "BuJo", "Bullet Journal", "Budget T
 featuredImage: ./images/blog-2.jpg
 ---
 
-Are you the kind of person who is not organized? Or a person who hardly plans for something unless it is really important? Someone whose thoughts are scattered, someone who just really need clarity? Well, you and I are alike. I missed a lot of deadlines, failed a lot of tasks and even forgot a lot of important events.
+Are you the kind of person who is not organized? Or a person who hardly plans for something unless it is really important? Someone whose thoughts are scattered, someone who just really need clarity? Well, you and I are alike. I missed a lot of deadlines, failed to do lots of tasks and even forgot numbers of important events.
 
 Recently, I’ve been having a hard time keeping track of the stuff that I have to do, ideas that come up or important dates I need to prepare for. I can't keep all this information inside my head, otherwise, I won't know what to prioritize, and worse, just straight-up forget them.  So I need to have a ***permanent record*** and be able to control the flow of the new stuff, which led me to the good old-fashioned ***note-taking***.
 
-As a tech enthusiast and a developer, I tend to lean on to using Applications that are both accessible on any device that I have. I've tried several apps to be my main note-taking app, apps such as *Evernote*, *OneNote*, and *Google Keep*, they're all great and functional but somehow, it doesn't work for me. The reason? I always get ***distracted*** with the other stuff on my devices, such as social media, notifications, emails, messages, and games. That's when I realized that I needed something non-digital.
+As a tech enthusiast and a developer, I tend to lean on to using Applications that are both accessible on any device that I have. I've tried several apps to be my main note-taking tool, apps such as *Evernote*, *OneNote*, and *Google Keep*, they're all great and functional but somehow, it doesn't work for me. The reason? I always get ***distracted*** with the other stuff on my devices, such as social media, notifications, emails, messages, and games. That's when I realized that I needed something non-digital.
 
 Fortunately, I stumbled upon this system described as ***"Analog method for the digital age"*** developed by *Ryder Carroll* [(@rydercarroll)](https://twitter.com/rydercarroll), called **The Bullet Journal Method**
 
@@ -22,7 +22,7 @@ Fortunately, I stumbled upon this system described as ***"Analog method for the 
 
 <br>
 
-There are a lot of ways that a bullet journal can be used, it is not limited by a set of rules, you can customize it however you want. If you look in Pinterest or Instagram about bullet journals you'll find a lot of unique ways the people use them. As for me, I started with the basics, I browsed for some ideas from the net. I've tried some and found out what worked or didn't work for me.
+There are a lot of ways that a bullet journal can be used and it is not limited by a set of rules, you can customize it however you want. If you look in Pinterest or Instagram about bullet journals, you'll find varieties of unique ways the people use them. As for me, I started with the basics, I browsed for some ideas from the net. I've tried some and found out what worked or won't for me.
 
 And now I'll share with you how I use my bullet journal and how I set it up for November.
 
@@ -32,22 +32,22 @@ And now I'll share with you how I use my bullet journal and how I set it up for 
 
 2. **Budget, Income and Expense Tracker**
 
-    One of my lifetime goals is to have financial freedom and one of the things every financial adviser would agree is that you should learn how to manage your finances. As a step towards this goal, I've decided to include this practice in my journal to keep all my self-development practices in the same place. I’ve tried several setups for this page, and I’m on my fourth iteration for this collection. Here’s my setup for November.
+    One of my lifetime goals is to have financial freedom and one of the things every financial adviser would agree is that you should learn how to manage your finances. As a step towards this goal, I've decided to include this practice in my journal to keep all my self-development practices in the same place. I’ve tried several setups for this page, and I’m on my fourth iteration for this collection.
 
-    ![My November budget tracker](./images/budget.png)
+    ![Here’s my setup for November](./images/budget.png)
 
 3. **Monthly Overview**
 
-    There's not much about this page other than I’m using this section to track all of the important dates for the month, I've also moved the monthly task list to the bottom of the first page, since I rarely use it and use the next page for something else.
+    There's not much about this page other than I’m using this section to track all of the important dates for the month, I've also moved the monthly task list to the bottom of the calendar, since I rarely use it and use the next page for something else.
 
     ![Here's my old setup, there's a lot of wasted space.](./images/old-monthly.png)
     ![Here's a more compact setup for November](./images/monthly-overview.png)
 
 4. **Habit Tracker**
 
-    Self-development heavily involves forming good habits and breaking bad ones. I use this page to track my progress. I used to have this on the rightmost side of my monthly overview calendar. For November, I'm going to try this setup.
+    Self-development heavily involves forming good habits and breaking bad ones *(I need to break a lot)*. I use this page to track my progress of my habits. I used to have this on the rightmost side of my monthly overview calendar.
 
-    ![Habit Tracker for November](./images/habit.png)
+    ![For November, I'm going to try this setup.](./images/habit.png)
 
 5. **Custom Collections**
 
