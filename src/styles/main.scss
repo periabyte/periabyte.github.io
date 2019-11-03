@@ -211,6 +211,9 @@ a {
         border-bottom-color: $Blue-Grunge-Background-2-hex;
         border-bottom-width: 0.5px;
         border-bottom-style: solid;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .link-date {
@@ -256,6 +259,31 @@ a {
 
     ul {
         list-style-position: outside;
+    }
+
+    ol {
+        & > li {
+            :first-child {
+                display: inline-block;
+                text-indent: 0;
+            }
+        }
+    }
+
+    .gatsby-resp-image-figure {
+        .gatsby-resp-image-figcaption {
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+
+    .gatsby-resp-image-wrapper {
+        max-height: 300px;
+
+        img {
+            object-fit: cover;
+        }
     }
 }
 
