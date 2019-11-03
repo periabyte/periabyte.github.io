@@ -51,7 +51,7 @@ class Layout extends PureComponent {
                             edges {
                                 node {
                                     frontmatter {
-                                        date(fromNow: true)
+                                        date
                                         title
                                         path
                                     }

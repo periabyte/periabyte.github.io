@@ -57,6 +57,6 @@ And now I'll share with you how I use my bullet journal and how I set it up for 
 
 I hope you learned a thing or two from this post. I am by no means an expert when it comes to bullet journaling, self-development, and finances. as I am still learning how to improve and master this system in a way that works for me. If you are in the same situation, I encourage you to give Bullet Journaling a try, you can learn more about it at [bulletjournal.com](https://bulletjournal.com).
 
-![My Journals](./images/journals.jpg)
+![My Bullet Journals](./images/journals.jpg)
 
 If you have questions regarding this post or suggestions on how can I improve my blog, feel free to send me an email [here](mailto:periabytes@gmail.com)

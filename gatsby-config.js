@@ -47,7 +47,9 @@ module.exports = {
                             // the content container as this plugin uses this as the
                             // base for generating different widths of each image.
                             maxWidth: 600,
-                            showCaptions: ['alt'],
+                            showCaptions: ["alt"],
+                            quality: 90,
+                            withWebp: true
                         },
                     },
                 ],

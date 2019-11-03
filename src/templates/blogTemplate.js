@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/_global/layout';
-import Img from 'gatsby-image';
 import BackgroundImage from 'gatsby-background-image';
 
 export default ({ data }) => {

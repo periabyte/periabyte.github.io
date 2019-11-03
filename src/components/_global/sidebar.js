@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import moment from 'moment';
 import Logo from "./logo";
 
 const Sidebar = ({ active, posts }) => (
@@ -73,7 +74,7 @@ const Sidebar = ({ active, posts }) => (
                         >
                             <div className="link-container">
                                 <div className="link-title">{post.frontmatter.title}</div>
-                                <small className="link-date">{post.frontmatter.date}</small>
+                                <small className="link-date">{moment(post.frontmatter.date).fromNow()}</small>
                             </div>
                         </Link>
                     );
