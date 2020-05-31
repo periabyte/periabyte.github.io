@@ -1,12 +1,11 @@
 import React from "react";
-import { graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
-import moment from 'moment';
+import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
+import moment from "moment";
 import Layout from "../../components/_global/layout";
 import SEO from "../../components/_global/seo";
 
-const BlogPage = ({data}) => {
-    console.log('data', data.allMarkdownRemark.edges[0])
+const BlogPage = ({ data }) => {
     return (
         <Layout>
             <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
@@ -28,7 +27,9 @@ const BlogPage = ({data}) => {
                                     <div className="blog-entry-details">
                                         <h3>{frontmatter.title}</h3>
                                         <p>{excerpt}</p>
-                                        <small>{moment(frontmatter.date).fromNow()}</small>
+                                        <small>
+                                            {moment(frontmatter.date).fromNow()}
+                                        </small>
                                     </div>
                                 </div>
                             </Link>
@@ -43,29 +44,27 @@ const BlogPage = ({data}) => {
 export default BlogPage;
 
 export const query = graphql`
-           {
-               allMarkdownRemark(
-                   sort: { fields: [frontmatter___date], order: DESC }
-               ) {
-                   edges {
-                       node {
-                           id
-                           excerpt
-                           frontmatter {
-                               date
-                               title
-                               path
-                               featuredImage {
-                                   childImageSharp {
-                                       fluid(maxWidth: 300) {
-                                           ...GatsbyImageSharpFluid
-                                       }
-                                   }
-                               }
-                               tags
-                           }
-                       }
-                   }
-               }
-           }
-       `;
+    {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+            edges {
+                node {
+                    id
+                    excerpt
+                    frontmatter {
+                        date
+                        title
+                        path
+                        featuredImage {
+                            childImageSharp {
+                                fluid(maxWidth: 300) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                        tags
+                    }
+                }
+            }
+        }
+    }
+`;
