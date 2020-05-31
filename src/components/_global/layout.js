@@ -33,7 +33,6 @@ class Layout extends PureComponent {
     render() {
         const { sidebarOpen } = this.state;
         const { children } = this.props;
-        console.log('this.props', this.props);
 
         return (
             <StaticQuery
