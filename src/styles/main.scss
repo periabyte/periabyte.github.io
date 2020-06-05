@@ -183,7 +183,7 @@ a {
 
     .page-content {
         max-width: 80%;
-        font-size: 1.10rem;
+        font-size: 1.1rem;
         p {
             text-indent: 50px;
             text-align: justify;
@@ -226,9 +226,9 @@ a {
 .blog-hero {
     color: #ffffff;
 
-    &::before{
+    &::before {
         display: block;
-        content: ' ';
+        content: " ";
         position: absolute;
         top: 0;
         left: 0;
@@ -236,7 +236,7 @@ a {
         bottom: 0;
         z-index: 1;
         background: $Blue-Grunge-Background-1-hex;
-        opacity: 0.20;
+        opacity: 0.2;
     }
 
     .hero-body {
@@ -290,7 +290,7 @@ a {
 .blog-main-container {
     display: flex;
     flex-direction: row;
-    padding: 0 100px;
+    padding: 0 10%;
 }
 
 .blog-post-tags-container {
@@ -377,7 +377,6 @@ a {
         max-width: 90%;
     }
 
-
     .blog-entry-container {
         max-width: 100%;
         flex-direction: column;
@@ -390,7 +389,6 @@ a {
     .blog-entry-details {
         padding: 10px 5px;
     }
-
 }
 
 @media (max-width: $size-xs) {
@@ -416,6 +414,4 @@ a {
             }
         }
     }
-
-
 }
