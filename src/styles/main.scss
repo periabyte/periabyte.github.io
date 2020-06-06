@@ -281,6 +281,9 @@ a {
     .gatsby-resp-image-wrapper {
         max-height: 300px;
 
+        &.full {
+            max-height: auto;
+        }
         img {
             object-fit: cover;
         }
